@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Progress</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <section class="progress-module">
+    <header>
+      <h2>Track Progress</h2>
+      <p>Overview of your study stats and completed goals</p>
+    </header>
+
+    <!-- Top KPI Cards Container -->
+    <div>
+      <article>
+        <span>L</span>
+        <div>
+          <h3>Tasks Done</h3>
+          <p id="tasks-done-count">0</p>
+        </div>
+      </article>
+
+      <article>
+        <span>⏱</span>
+        <div>
+          <h3>Focus Time</h3>
+          <p id="focus-time-count">0 mins</p>
+        </div>
+      </article>
+
+      <article>
+        <span>🔥</span>
+        <div>
+          <h3>Daily Streak</h3>
+          <p id="streak-count">0 Days</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Chart Container -->
+    <div>
+      <h3>Weekly Focus Hours</h3>
+      <div class="chart-wrapper">
+        <canvas id="weeklyProgressChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
